@@ -48,7 +48,7 @@ variable "subnet_delegation" {
 }
 
 variable "subnet_private_endpoint_network_policies" {
-  type = map(bool) 
+  type = map(string) 
   default = {}
   description = "A map with key (string) `subnet name`, value (bool) `true` or `false` to indicate enable or disable network policies for the private link endpoint on the subnet. Default value is false."
 }
